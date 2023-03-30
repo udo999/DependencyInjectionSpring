@@ -4,14 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfd1cd24-c04b-49b5-b562-8e415d4ae19b" name="Changes" comment="Proper DI">
-      <change afterPath="$PROJECT_DIR$/DipendencyInjection/src/main/java/com/example/dipendencyinjection/services/GreetingServicePrimarly.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DipendencyInjection/src/main/java/com/example/dipendencyinjection/services/GreetingServicePropertyInjected.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DipendencyInjection/src/main/java/com/example/dipendencyinjection/services/GreetingServiceSetterInjection.java" afterDir="false" />
+    <list default="true" id="bfd1cd24-c04b-49b5-b562-8e415d4ae19b" name="Changes" comment="Using qualifiers">
+      <change afterPath="$PROJECT_DIR$/DipendencyInjection/src/main/java/com/example/dipendencyinjection/controllers/i18n/Myi18nController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DipendencyInjection/src/main/java/com/example/dipendencyinjection/services/i18n/EnglsihGreetingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DipendencyInjection/src/main/java/com/example/dipendencyinjection/services/i18n/SpanishGreetingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DipendencyInjection/src/test/java/com/example/dipendencyinjection/controllers/i18n/myi18nControllerTestEN.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DipendencyInjection/src/test/java/com/example/dipendencyinjection/controllers/i18n/myi18nControllerTestES.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DipendencyInjection/src/main/java/com/example/dipendencyinjection/controllers/ConstructorInjectedController.java" beforeDir="false" afterPath="$PROJECT_DIR$/DipendencyInjection/src/main/java/com/example/dipendencyinjection/controllers/ConstructorInjectedController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DipendencyInjection/src/main/java/com/example/dipendencyinjection/controllers/PropertyInjectedController.java" beforeDir="false" afterPath="$PROJECT_DIR$/DipendencyInjection/src/main/java/com/example/dipendencyinjection/controllers/PropertyInjectedController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DipendencyInjection/src/main/java/com/example/dipendencyinjection/controllers/SetterInjectedController.java" beforeDir="false" afterPath="$PROJECT_DIR$/DipendencyInjection/src/main/java/com/example/dipendencyinjection/controllers/SetterInjectedController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,38 +67,7 @@
       <recent name="com.example.dipendencyinjection.controllers" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SetterInjectedControllerTest">
-    <configuration name="ConstructorInjectedControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DipendencyInjection" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.dipendencyinjection.controllers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.dipendencyinjection.controllers" />
-      <option name="MAIN_CLASS_NAME" value="com.example.dipendencyinjection.controllers.ConstructorInjectedControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ConstructorInjectedControllerTest.sayHello" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DipendencyInjection" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.dipendencyinjection.controllers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.dipendencyinjection.controllers" />
-      <option name="MAIN_CLASS_NAME" value="com.example.dipendencyinjection.controllers.ConstructorInjectedControllerTest" />
-      <option name="METHOD_NAME" value="sayHello" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.myi18nControllerTestES.sayHello">
     <configuration name="PropertyInjectedControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DipendencyInjection" />
       <extension name="coverage">
@@ -130,16 +98,47 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SetterInjectedControllerTest.sayHello" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="myi18nControllerTestEN.sayHello" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DipendencyInjection" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.dipendencyinjection.controllers.*" />
+          <option name="PATTERN" value="com.example.dipendencyinjection.controllers.i18n.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.dipendencyinjection.controllers" />
-      <option name="MAIN_CLASS_NAME" value="com.example.dipendencyinjection.controllers.SetterInjectedControllerTest" />
+      <option name="PACKAGE_NAME" value="com.example.dipendencyinjection.controllers.i18n" />
+      <option name="MAIN_CLASS_NAME" value="com.example.dipendencyinjection.controllers.i18n.myi18nControllerTestEN" />
+      <option name="METHOD_NAME" value="sayHello" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="myi18nControllerTestES" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DipendencyInjection" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.dipendencyinjection.controllers.i18n.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.dipendencyinjection.controllers.i18n" />
+      <option name="MAIN_CLASS_NAME" value="com.example.dipendencyinjection.controllers.i18n.myi18nControllerTestES" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="myi18nControllerTestES.sayHello" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DipendencyInjection" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.dipendencyinjection.controllers.i18n.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.dipendencyinjection.controllers.i18n" />
+      <option name="MAIN_CLASS_NAME" value="com.example.dipendencyinjection.controllers.i18n.myi18nControllerTestES" />
       <option name="METHOD_NAME" value="sayHello" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -155,11 +154,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.myi18nControllerTestES.sayHello" />
+        <item itemvalue="JUnit.myi18nControllerTestEN.sayHello" />
+        <item itemvalue="JUnit.myi18nControllerTestES" />
         <item itemvalue="JUnit.SetterInjectedControllerTest" />
         <item itemvalue="JUnit.PropertyInjectedControllerTest" />
-        <item itemvalue="JUnit.ConstructorInjectedControllerTest" />
-        <item itemvalue="JUnit.ConstructorInjectedControllerTest.sayHello" />
-        <item itemvalue="JUnit.SetterInjectedControllerTest.sayHello" />
       </list>
     </recent_temporary>
   </component>
@@ -171,7 +170,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1680197261882</updated>
-      <workItem from="1680197263151" duration="4326000" />
+      <workItem from="1680197263151" duration="5635000" />
     </task>
     <task id="LOCAL-00001" summary="Simple project">
       <created>1680197642501</created>
@@ -201,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680200698393</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Using qualifiers">
+      <created>1680201996688</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1680201996688</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,6 +217,7 @@
     <MESSAGE value="Simple project" />
     <MESSAGE value="DI without injection" />
     <MESSAGE value="Proper DI" />
-    <option name="LAST_COMMIT_MESSAGE" value="Proper DI" />
+    <MESSAGE value="Using qualifiers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Using qualifiers" />
   </component>
 </project>
